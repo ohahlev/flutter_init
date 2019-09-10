@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_init/my_fancy_button.dart';
 
 void main() => runApp(MyApp());
 
@@ -53,11 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: MyFancyButton(
+          label: "CLICK HERE",
+          onPressed: _incrementCounter)
     );
   }
 }
